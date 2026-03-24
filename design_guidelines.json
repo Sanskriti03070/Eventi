@@ -1,0 +1,136 @@
+{
+  "project_name": "Eventi",
+  "theme": "light",
+  "typography": {
+    "font_family": {
+      "body": "DM Sans, sans-serif",
+      "heading": "DM Sans, sans-serif",
+      "logo": "Anonymous Pro, monospace"
+    },
+    "scale": {
+      "h1": "text-3xl font-bold tracking-tight",
+      "h2": "text-2xl font-semibold tracking-tight",
+      "h3": "text-xl font-semibold",
+      "body": "text-base font-normal leading-relaxed",
+      "small": "text-sm font-medium text-muted-foreground"
+    }
+  },
+  "colors": {
+    "primary": "#DC143C",
+    "primary_foreground": "#FFFFFF",
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "card": "#FFFFFF",
+    "card_foreground": "#000000",
+    "muted": "#F3F4F6",
+    "muted_foreground": "#6B7280",
+    "border": "#E5E7EB",
+    "input": "#F3F4F6",
+    "ring": "#DC143C",
+    "destructive": "#EF4444",
+    "success": "#22C55E"
+  },
+  "visual_enhancers": {
+    "radius": "12px",
+    "shadow": {
+      "card": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "hover": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+    },
+    "animation": {
+      "none": "none",
+      "fast": "transition-all duration-200 ease-in-out"
+    }
+  },
+  "layout": {
+    "container": "max-w-md mx-auto min-h-screen bg-background relative pb-20",
+    "grid": {
+      "mobile": "grid-cols-1 gap-4",
+      "tablet": "md:grid-cols-2 md:gap-6",
+      "desktop": "lg:grid-cols-3 lg:gap-8"
+    },
+    "spacing": {
+      "section": "py-6 px-4",
+      "card_padding": "p-4"
+    }
+  },
+  "component_rules": {
+    "buttons": {
+      "primary": "bg-[#DC143C] text-white hover:bg-[#B01030] rounded-[12px] h-12 font-medium px-6",
+      "secondary": "bg-white text-black border border-gray-200 hover:bg-gray-50 rounded-[12px] h-12 font-medium px-6",
+      "ghost": "hover:bg-gray-100 text-gray-600 rounded-[12px] h-10 px-4",
+      "destructive": "bg-red-500 text-white hover:bg-red-600 rounded-[12px] h-12"
+    },
+    "cards": {
+      "default": "bg-white rounded-[12px] border border-gray-100 shadow-sm overflow-hidden",
+      "interactive": "bg-white rounded-[12px] border border-gray-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer overflow-hidden"
+    },
+    "inputs": {
+      "default": "bg-gray-50 border-gray-200 focus:border-[#DC143C] focus:ring-[#DC143C] rounded-[12px] h-12 px-4"
+    }
+  },
+  "image_urls": {
+    "categories": [
+      {
+        "url": "https://images.unsplash.com/photo-1761300725208-e8f92da35f5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxiaXJ0aGRheSUyMHBhcnR5JTIwZGVjb3JhdGlvbiUyMG1vZGVybnxlbnwwfHx8fDE3NzQzMjIxNzN8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Birthday Decoration",
+        "category": "Birthday"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759730840961-09faa5731a3b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHx3ZWRkaW5nJTIwc3RhZ2UlMjBkZWNvcmF0aW9uJTIwZWxlZ2FudHxlbnwwfHx8fDE3NzQzMjIxNzR8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Wedding Stage",
+        "category": "Wedding"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1766918780916-228d10b071be?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc2hvd2VyJTIwZGVjb3JhdGlvbiUyMHRoZW1lc3xlbnwwfHx8fDE3NzQzMjIxNzV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Baby Shower",
+        "category": "Baby Shower"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1754282183851-25dd5f7e9a78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3ZWRkaW5nJTIwc3RhZ2UlMjBmbG93ZXIlMjBkZWNvcmF0aW9ufGVufDB8fHx8MTc3NDMyMjE4Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Traditional Flower Decor",
+        "category": "Traditional"
+      }
+    ],
+    "vendors": [
+      {
+        "url": "https://images.unsplash.com/photo-1772683530615-3b3ac678e81f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxiYWxsb29uJTIwZGVjb3JhdGlvbiUyMGFyY2glMjBiaXJ0aGRheXxlbnwwfHx8fDE3NzQzMjIxODd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Balloon Masters Portfolio",
+        "category": "Balloons"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1747115275646-49725fb5a003?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwc3RhZ2UlMjBkZWNvcmF0aW9uJTIwZWxlZ2FudHxlbnwwfHx8fDE3NzQzMjIxNzR8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Elegant Events Portfolio",
+        "category": "Floral"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1755844184063-d309fc14458e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjB3ZWRkaW5nJTIwc3RhZ2UlMjBmbG93ZXIlMjBkZWNvcmF0aW9ufGVufDB8fHx8MTc3NDMyMjE4Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Chennai Decorators Portfolio",
+        "category": "Stage"
+      }
+    ],
+    "placeholders": {
+      "avatar": "https://github.com/shadcn.png",
+      "logo_bg": "https://images.unsplash.com/photo-1759523350278-b8f653dc68da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMHBhcnR5JTIwZGVjb3JhdGlvbiUyMG1vZGVybnxlbnwwfHx8fDE3NzQzMjIxNzN8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. MOBILE-FIRST: Build everything assuming a mobile viewport first (max-w-md mx-auto for desktop view).",
+    "2. BRANDING: Use Primary Red #DC143C for all primary actions (Book, Pay, Login).",
+    "3. TYPOGRAPHY: Import DM Sans from Google Fonts for the entire app. Use Anonymous Pro ONLY for the text 'Eventi' in the logo.",
+    "4. COMPONENTS: Use Shadcn/UI components but override rounded corners to 12px (rounded-xl) and use light shadows.",
+    "5. MOCKED FLOWS: Implement a simple 'Sign in with Google' button that mocks a successful login. Implement a 'Pay Now' button that opens a mock success modal.",
+    "6. ADMIN PANEL: Create a separate /admin route. It does not need the mobile wrapper constraint; it can be full-width.",
+    "7. DATA-TESTID: Add data-testid='...' to all interactive elements (buttons, inputs, cards).",
+    "8. NO ANIMATIONS: Keep transitions minimal as requested (fast 200ms or none).",
+    "9. ICONS: Use Lucide React icons. Simple, outlined style.",
+    "10. SPLASH SCREEN: Create a splash screen with Red background and White 'Eventi' text (Anonymous Pro font) that shows for 2 seconds before redirecting to Login.",
+    "11. COLOR PALETTE: Ensure high contrast. Text on Red buttons must be White. Text on White cards must be Black or Dark Gray."
+  ],
+  "universal_guidelines": [
+    "Use 'sonner' for toasts.",
+    "Do not use gradients for backgrounds, stick to solid White or subtle Gray #F9FAFB.",
+    "Use lucide-react for icons.",
+    "Export components as named exports.",
+    "Export pages as default exports."
+  ]
+}
