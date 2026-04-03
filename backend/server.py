@@ -16,7 +16,7 @@ load_dotenv(ROOT_DIR / '.env')
 
 mongo_url = os.getenv("MONGO_URL")
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db = client[os.getenv("DB_NAME")]
 
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
@@ -567,23 +567,16 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup():
-    # Auto-seed on startup
-    count = await db.vendors.count_documents({})
-    if count == 0:
-        logger.info("No vendors found, seeding data...")
-        async with httpx.AsyncClient() as http_client:
-            pass
-        # Call seed inline
-        from contextlib import suppress
-        with suppress(Exception):
+    try:
+        count = await db.vendors.count_documents({})
+        if count == 0:
+            logger.info("No vendors found, seeding data...")
             await seed_data()
+    except Exception as e:
+        logger.error(f"Startup error: {e}")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
 
-    import uvicorn
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run("server:app", host="0.0.0.0", port=port)
+    
